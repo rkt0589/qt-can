@@ -37,5 +37,11 @@ HEADERS += \
 FORMS += \
         application.ui
 
+# deployment on Linux
+unix {
+   target.path = /usr/bin/
+   INSTALLS += target \
+}
+
 target.path = /home/root
 INSTALLS += target
