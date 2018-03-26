@@ -1,0 +1,10 @@
+[Unit]
+Description=Qt demo OE example
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/qt-can.sh
+
+[Install]
+WantedBy=multi-user.target
