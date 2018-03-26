@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>application</class>
+ <widget class="QMainWindow" name="application">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>312</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>application</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(211, 215, 207);
+background-color: rgb(85, 87, 83);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="0">
+     <layout class="QFormLayout" name="formLayout"/>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="lblDemo">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(46, 52, 54);
+font: 75 20pt &quot;URW Bookman L&quot;;
+background-color: rgb(114, 159, 207);</string>
+      </property>
+      <property name="text">
+       <string>Demo Application</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>5</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="Led">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(46, 52, 54);</string>
+      </property>
+      <property name="text">
+       <string>LED 133</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="startADC">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(46, 52, 54);</string>
+      </property>
+      <property name="text">
+       <string>Start ADC Capture</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="pinLabel">
+      <property name="text">
+       <string>Input 127</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="pinState">
+      <property name="text">
+       <string>High</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>CH 1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLCDNumber" name="AI1">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(46, 52, 54);
+</string>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>CH 2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLCDNumber" name="AI2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(46, 52, 54);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>CH 3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLCDNumber" name="AI3">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(46, 52, 54);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>CH 4</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLCDNumber" name="AI4">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(46, 52, 54);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-13</y>
+         <width>280</width>
+         <height>90</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="rowCount">
+             <number>10</number>
+            </property>
+            <property name="columnCount">
+             <number>4</number>
+            </property>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
